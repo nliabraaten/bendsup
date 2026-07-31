@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bend SUP | Year-Round Paddleboard Community & Athletic Club</title>
+    <meta name="description" content="Central Oregon's year-round stand-up paddleboarding club focused on fitness, cold-water resilience, stroke technique, and high-desert community.">
+    
+    <!-- Google Fonts & Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        river: { 900: '#0F2C3E', 800: '#1A435C', 500: '#00A896', 400: '#02C39A' },
+                        cascade: { 100: '#F0F7F7', 50: '#F8FCFC' }
+                    },
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cascade-50 text-river-900 font-sans antialiased">
+
+    <!-- Top Announcement Bar (Solves Rental Shop Confusion) -->
+    <div class="bg-river-900 text-white text-xs sm:text-sm py-2 px-4 text-center border-b border-river-800">
+        <span class="opacity-80">Looking for daily board rentals in Bend?</span> 
+        <a href="#rentals" class="underline font-semibold text-river-400 hover:text-white ml-1">Check out our recommended local shop partners →</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <span class="text-2xl">🏄‍♂️</span>
+            <span class="text-xl font-extrabold tracking-tight text-river-900">BEND <span class="text-river-500">SUP</span></span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-river-800">
+            <a href="#mission" class="hover:text-river-500 transition">Our Vibe</a>
+            <a href="#schedule" class="hover:text-river-500 transition">Workouts</a>
+            <a href="#beginners" class="hover:text-river-500 transition">Beginners</a>
+            <a href="#rentals" class="hover:text-river-500 transition">Rentals</a>
+        </div>
+        <a href="#join" class="bg-river-500 hover:bg-river-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md transition-all">Join the Club</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 pt-12 pb-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <div class="inline-flex items-center space-x-2 bg-river-500/10 text-river-800 text-xs font-bold px-3.5 py-1.5 rounded-full mb-6">
+                <span>🌲 Central Oregon's 4-Season Paddle Club</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-river-900 leading-[1.15] mb-6">
+                PADDLE WITH PURPOSE. <br><span class="text-river-500">ALL 365 DAYS.</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl">
+                We’re rethinking paddleboarding in Bend. Less floating with a drink—more core fitness, cold-water resilience, stroke technique, and crisp morning water on the Deschutes.
+            </p>
+            
+            <!-- Email Capture Form -->
+            <form id="join" class="flex flex-col sm:flex-row gap-3 max-w-md" onsubmit="event.preventDefault(); alert('Welcome to Bend SUP! We will email you session details soon.');">
+                <input type="email" placeholder="Enter your email address" required class="flex-1 px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-river-500 bg-white shadow-sm">
+                <button type="submit" class="bg-river-900 hover:bg-river-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition-all whitespace-nowrap">
+                    Join First Paddle
+                </button>
+            </form>
+            <p class="text-xs text-slate-400 mt-3">Free community. Zero pressure. Year-round motivation.</p>
+        </div>
+
+        <!-- Hero Card -->
+        <div class="relative bg-gradient-to-tr from-river-900 to-river-800 rounded-3xl p-8 text-white shadow-2xl">
+            <div class="absolute top-4 right-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold">
+                Bend, Oregon
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Weekly Sunrise Fitness Paddle</h3>
+            <p class="text-slate-300 text-sm mb-6">Quiet water, glass conditions, and 3 miles of interval work before the float crowds arrive.</p>
+            
+            <div class="space-y-3 border-t border-white/10 pt-6 text-sm">
+                <div class="flex items-center space-x-3">
+                    <span class="text-river-400 font-bold">WHEN:</span>
+                    <span>Tuesdays & Thursdays at 6:45 AM</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-river-400 font-bold">WHERE:</span>
+                    <span>Riverfront Park ➔ Farewell Bend</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-river-400 font-bold">EQUIPMENT:</span>
+                    <span>Board, PFD, Leash & Wetsuit/Drysuit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Pillars -->
+    <section id="mission" class="bg-white py-20 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-river-900 mb-4">MORE THAN A MEETUP</h2>
+                <p class="text-slate-600">Built for active locals who view stand-up paddleboarding as a sport, a mental reset, and a year-round outdoor lifestyle.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-cascade-50 border border-slate-100">
+                    <div class="text-3xl mb-4">💪</div>
+                    <h3 class="text-xl font-bold text-river-900 mb-2">Core & Endurance</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Turn your board into a floating gym. Interval training, distance sessions, and posture refinement designed for a full-body workout.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-cascade-50 border border-slate-100">
+                    <div class="text-3xl mb-4">❄️</div>
+                    <h3 class="text-xl font-bold text-river-900 mb-2">Cold-Water Skill</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Fall, winter, and spring paddling are magic in Central Oregon. We teach cold-water safety, thermal layering, and river mechanics.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-cascade-50 border border-slate-100">
+                    <div class="text-3xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold text-river-900 mb-2">Newbie Friendly</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">No gatekeeping. We host dedicated onboarding clinics so brand-new paddlers can build skill and confidence before main workouts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Referral Section (Monetization & Partner Goodwill) -->
+    <section id="rentals" class="bg-river-900 text-white py-16">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <span class="text-river-400 font-bold text-xs uppercase tracking-widest">Visiting Bend or Need Equipment?</span>
+            <h2 class="text-3xl font-bold mt-2 mb-4">NEED TO RENT A PADDLEBOARD?</h2>
+            <p class="text-slate-300 max-w-2xl mx-auto text-sm mb-8">
+                Bend SUP is an active community club, not a commercial rental shop. If you need daily rentals, wetsuits, or gear, support our trusted local outfitter partners in town:
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.tumalocreek.com" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 border border-white/20 px-6 py-3 rounded-xl font-semibold text-sm transition">Tumalo Creek Kayak & Canoe ↗</a>
+                <a href="https://standonliquid.com" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 border border-white/20 px-6 py-3 rounded-xl font-semibold text-sm transition">Stand on Liquid ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-river-900 text-slate-400 border-t border-river-800 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center sm:flex sm:justify-between sm:text-left">
+            <p class="text-xs">&copy; 2026 Bend SUP (bendsup.com). All rights reserved.</p>
+            <p class="text-xs mt-2 sm:mt-0">Bend, Oregon | Deschutes River & High Lakes</p>
+        </div>
+    </footer>
+
+</body>
+</html>
